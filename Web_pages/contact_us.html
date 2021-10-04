@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact US</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../CSS/desgine.css">
+  
+  
+  <style>
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+
+    background-color: #45a049;
+  }
+  label{
+    color: white;
+    font-size: 20px;
+    font-width:bold;
+  }
+
+  .io{
+    border-radius: 5px;
+    background-color: rgba(60,59,59,0.75);
+    padding: 20px;
+    height: 80vh;
+    margin: 60px 100px 50px  150px;
+  }
+  </style>
+</head>
+<body style="background-image: url(../IMAGES/1.jpg);">
+  <script src="../js/formValidation.js"></script>
+  <div class="container">
+    <header>
+      <nav>
+        <mark>E-mail : aayushbidari460@gmail.com</mark>
+        <ul style="float: right;">
+          <li style="list-style-type: none; display: inline-block; ">
+            <button>
+              <a href="../index.html">HOME</a>
+            </button>
+          </li>
+          <li style="list-style-type: none; display: inline-block; ">
+            <button>
+              <a  href="about_us.html">MY CV</a>
+            </button>
+          </li>
+          <li style="list-style-type: none; display: inline-block;">
+            <button>
+              <a href="BLOGS.html">BLOGS</a>
+            </button>
+          </li>
+          <li style="list-style-type: none; display: inline-block;">
+            <button>
+              <a href="RESERCH.html">RESERCH</a>
+            </button>
+          </li>
+          <li style="list-style-type: none; display: inline-block;">
+            <button>
+              <a href="#"class="active">CONTACT US</a>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <div class="time" id="clock"></div>
+  <div class="io">
+    <form name="myForm" id="myForm" onsubmit="return validateForm()">
+      <label for="fname">FUll Name</label>
+      <input type="text" id="fname" name="fname" placeholder="Your name.." >
+
+      <label for="lname">Email</label>
+      <input type="text" id="email" name="email" placeholder="Your  email.." >
+
+
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" >
+        
+      </textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <footer >
+    <p> &copy; Aayush Bidari, NEPAl. all right reserved</p>
+  </footer>
+  <script src="../js/ja.js"></script>
+</body>
+</html>

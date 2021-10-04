@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>BLOGS</title>
+    <link rel="stylesheet" href="../CSS/desgine.css">
+    <!-- <meta http-equiv="refresh" content="10"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+    body
+    {
+    	background-image: linear-gradient(to bottom right, #ccc, #333);
+    }
+ 	.information
+     {
+        position: relative;
+        background-image: url(../IMAGES/glass.jpg);
+        
+        width: 80%;
+        height: 130vh;
+        margin-left: 80px;
+        display: block;
+        padding: 10px;
+        box-shadow: 5px 5px 10px grey;
+    }
+
+	.div1{
+    	display: flex;
+    	margin-top: 60px;
+    }
+    .a1{
+    border: black 2px solid;
+    border-radius: 12px 12px;
+    width: 70%;
+    height: 230px;
+    padding: 0px,20px;
+    }
+	.slider{
+	    background-color:black; 
+	    border: black 2px solid;
+	    width: 25%;
+	    height: 200px;
+	    margin-left: 20px;
+	    margin-right: 20px;
+		overflow: hidden;
+		box-shadow: 5px 5px 10px grey;
+		height: 100%
+	}
+	.a2{
+	    background-color:black; 
+	    border: black 2px solid;
+	    width: 25%;
+	    height: 200px;
+	    
+	    margin-left: 20px;
+	    margin-right: 20px;
+	}
+
+
+	img{
+	    width:100%;
+	    height: 200px;
+	    object-fit: contain;
+	}
+
+	p{
+	    font-size: 20px;
+	    font-family: sans-serif;
+	    padding: 20px;
+	}
+
+	.a3{
+	    text-align: center;
+	}
+	li
+	{
+		list-style-type: none;
+	}
+	.sec
+	{
+		width:80%;
+		background-color: grey;
+		color: white;
+	}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<nav>
+				<mark>E-mail : aayushbidari460@gmail.com</mark>
+				<ul style="float: right;">
+					<li style="list-style-type: none; display: inline-block; ">
+						<button>
+							<a href="../index.html">HOME</a>
+						</button>
+					</li>
+					<li style="list-style-type: none; display: inline-block; ">
+						<button>
+							<a href="about_us.html">MY CV</a>
+						</button>
+					</li>
+					<li style="list-style-type: none; display: inline-block;">
+						<button>
+							<a class="active" href="#">BLOGS</a>
+						</button>
+					</li>
+					<li style="list-style-type: none; display: inline-block;">
+						<button>
+							<a href="RESERCH.html">RESERCH</a>
+						</button>
+					</li>
+					<li style="list-style-type: none; display: inline-block;">
+						<button>
+							<a href="contact_us.html">CONTACT US</a>
+						</button>
+					</li>
+				</ul>
+			</nav>
+		</header>
+	</div>
+	<div class="time" id="clock"></div>
+
+    <section style="margin-top: 50px;background-color:;" >
+        <div class="sec">
+        	<h1>Technologies on todays world.</h1>
+        	<p>Development of new and morden technology have always made various changes on our day to day life, technologies have always made our life easier. Among various technology information technology have played vital role on the development of todays world.</p>
+        	<p>Information technology have really changed our world. it really helped in the digitalization of world.</p>
+        </div>
+        <div class="information">
+            <div class="a3">
+                <h1>Information Technology</h1>
+            </div>
+            <div class="div1">
+                <div class="slider" id="img">
+                    <img src="../IMAGES/IT.jpg" height="100%">
+                </div>
+                <div class="a1">
+                    <p>
+                        The research, design, development, implementation, support, or management of computer-based information systems—particularly software applications and computer hardware—is known as information technology.Development of information technology have made our life easier. 
+                  	</p>
+                </div>
+            </div>
+            <div class="a3">
+                <h1>Impact of technologies on Society</h1>
+            </div>
+            <div class="div1">
+
+                <div class="a1">
+                   	<p>mostly technology are proven benifical for man kind i.e..
+                    	<ul>
+                    		<li> It made communication easier</li>
+                    		<li>IT had impact on various feilds like banking, teaching, medical etc. </li>
+                    	</ul>
+                  		<p> It also has various negative impact on man kind.i.e</p>
+                  		<ul>
+                  			<li> Making hummans inactive and lazy.</li>
+                  			<li>people miss use it to conduct criminal activites.</li>
+                  		</ul>
+                    </p>
+                </div>
+                <div class="a2">
+                    <img src="../IMAGES/IT4.jpg" alt="AAYUSH">
+                </div>
+            </div>
+            <div style="margin-top: 20px">
+            	<h2 style="text-align: center;">Technology changed humman life </h2>
+            	<p>Overall technologies are proven benifical to man kind,Although it have bad impact as developemrnt on technology are polluting enviroment, making hummans lazy and inactive, growth of technolohy on various feild causing jobloss to many humman manpower.but we cant ignore the fact that technology have made our life easier many impossible things are made possible so technology are important,but we have to use it wisely.</p>
+            </div>
+		</div>
+	</section>
+	<br>
+	<footer>
+		&copy; Aayush Bidari, NEPAl. all right reserved
+	</footer>
+	<script src="../js/ja.js"></script>
+
+	<script type="text/javascript">
+		var images=["../IMAGES/IT.jpg","../IMAGES/IT2.jpg","../IMAGES/IT3.jpg","../IMAGES/IT4.jpg"]
+		var x=0;
+
+		var imgs = document.getElementById("img")
+
+		setInterval(slider,3000)
+
+		function slider()
+		{
+		 	if (x < images.length){
+				x = x + 1;
+		 	}
+			else{
+		 		x=1
+		 	}
+		 	imgs.innerHTML="<img src="+images[x-1]+">"
+	 	}
+	</script>
+</body>
+</html>
